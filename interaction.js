@@ -21,10 +21,10 @@ modal.addEventListener("click", ()=> {
 //fin
 
 
-let articles = document.querySelectorAll("a .open-btn");
+let articles = document.querySelectorAll("a.open-btn");
 
 for(let article of articles){
-    article.addEventListener("click", persomodal());
+    article.addEventListener("click", persomodal);
 }
  
 function persomodal(){
@@ -43,10 +43,10 @@ function persomodal(){
 
 let modalf= document.querySelector("form");
 
-let btnfO= document.querySelector(".btn-open");
+let btnfO= document.querySelector("a.btn-open");
 
 btnfO.addEventListener("click", ()=> {
-    modalf.style.display = "block";
+    modalf.style.display = "flex";
 });
 
 

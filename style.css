@@ -34,9 +34,7 @@ body {
   height: 5px;
   right: -15px;
   top: 45px;
-
   z-index: -2;
-
 }
 
 /*fin du conteneur1*/
@@ -44,7 +42,8 @@ body {
   border-top: solid 5px green;
   background-color: black;
   color: black;
-  height: 100vh;
+  text-align: center;
+  
 }
 
 .conteneur2>h1 {
@@ -53,70 +52,80 @@ body {
   color: white;
   font-size: 2rem;
   text-decoration: underline green;
+
 }
 
 .conteneur2>.box-presentation {
   margin-top: 100px;
   border-radius: 5px;
-
   background: rgba( 255, 255, 255, 0.85 );
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 10px );
   border-radius: 10px;
   border: 1px solid rgba( 255, 255, 255, 0.18 );
-
+  margin-bottom: 15px;
 }
 
-.conteneur2>.box-presentation {
+.box-presentation {
   /* border-radius: 15px;  */
   margin-left: 15px;
   margin-right: 15px;
   padding-top: 20px;
   padding-bottom: 30px;
-
-  display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 3fr;
-
-
+ 
 }
 
-.conteneur2>.box-presentation>.moi{
+.conteneur2>.box-presentation>.plusimage .moi{
   text-decoration: underline 3px green;
   font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-column: 2/ 2;
-  grid-row: 1;
+  margin-top: 15px;
 }
 
 
 .conteneur2>.box-presentation>p {
   font-family: 'Roboto', sans-serif;
   margin-top: 15px;
-  grid-column: 2/2;
-  grid-row: 2;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  text-align: start;
 }
 
 .conteneur2>.box-presentation>ul {
   font-family: 'Roboto', sans-serif;
   margin-top: 15px;
   margin-left: 30px;
-  grid-column: 1/2;
-  grid-row: 2;
+  text-align: start;
+  
 }
-
-.conteneur2>.box-presentation>img {
+.conteneur2>.box-presentation>div{
+  margin-top: 45px;
+}
+.conteneur2>.box-presentation>div>a:hover{
+  background-color: green;
+  color: white;
+  text-decoration: underline white;
+ 
+}
+.conteneur2>.box-presentation>div>a{
+  font-family: 'Poppins', sans-serif;
+   background-color: black;
+   color: white;
+   font-weight: bolder;
+  text-decoration: none;  
+  border-radius: 5px;
+   padding: 10px;
+}
+.conteneur2>.box-presentation>.plusimage >img {
   border: solid 5px green;
   border-radius: 15px;
   height: 130px;
-  margin: 10px;
-
-  grid-column: 1/2;
-  grid-row: 1;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 1) 0px 5px 15px;
 }
 
 .slider {
@@ -131,11 +140,69 @@ body {
   margin: 40px 10px;
   padding: 15px 5px;
   text-align: center;
-
-
 }
-
-
+.conteneur2>.carousel{
+  width: calc(180 * 7);
+  
+}
+.carousel{
+   background-color: rgba( 255, 255, 255, 0.85 );
+  font-family: 'Poppins', sans-serif;
+  margin-top: 50px;
+}
+.conteneur2>.carousel>.carousel-content{
+ 
+  padding: 15px 15px;
+  margin: 20px 0 80px 0;
+  display: flex;
+  overflow: hidden;
+ 
+}
+.conteneur2>.carousel>.carousel-content>.left{
+  float: left;
+  animation: slide 30s infinite;
+  
+}
+.conteneur2>.carousel>.carousel-content>.left img{
+  height: 140px;
+}
+/* 
+@keyframes slide {
+  0%{
+    transform: translateX(0);
+  }
+  20%{
+    transform: translateX(-200px);
+  }
+  40%{
+    transform: translateX(-400px);
+  }
+  60%{
+    transform: translateX(-600px);
+  }
+  70%{
+    transform: translateX(-700px);
+  }
+  80%{
+    transform: translateX(-800px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+} */
+@keyframes slide {
+  0%{
+    transform: translateX(0);
+  }
+  50%{
+    transform: translateX(-1020px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+  
+}
 
 /* fin coneneur2 */
 
@@ -143,12 +210,11 @@ body {
   border-top: solid 5px green;
   background-color: black;
   color: white;
-  padding-top: 60px;
   padding-bottom: 60px;
  
 }
 
-.conteneur3>h1 {
+.conteneur3>h2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -156,7 +222,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.conteneur3>.box1-e {
+.conteneur3>.content .box1-e {
   background: black;
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -168,17 +234,17 @@ body {
   text-align: center;
 }
 
-.conteneur3>.logoF>img {
+.conteneur3>.content >.logoF>img {
   background: black;
   min-width: 50px;
 }
 
-.conteneur3>.box1-e>h2 {
+.conteneur3>.content >.box1-e>h2 {
 
   font-family: 'Poppins', sans-serif;
 }
 
-.conteneur3>.box1-e>p {
+.conteneur3>.content >.box1-e>p {
   margin-left: 15px;
   margin-right: 15px;
   margin-top: 15px;
@@ -186,12 +252,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.conteneur3>.box1-e>img {
+.conteneur3>.content >.box1-e>img {
   width: 200px;
 
 }
 
-.conteneur3>.box2-e {
+.conteneur3>.content >.box2-e {
   background-color: black;
   color: white;
   border-radius: 10px;
@@ -202,21 +268,21 @@ body {
   text-align: center;
 }
 
-.conteneur3>.box2-e>h2 {
+.conteneur3>.content >.box2-e>h2 {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
-.conteneur3>.box2-e>p {
+.conteneur3>.content >.box2-e>p {
   font-family: 'Roboto', sans-serif;
   text-align: s;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.conteneur3>.box3-e {
+.conteneur3>.content >.box3-e {
   background-color: black;
   color: white;
 
@@ -229,18 +295,18 @@ body {
   text-align: center;
 }
 
-.conteneur3>.box3-e>h2 {
+.conteneur3>.content >.box3-e>h2 {
   font-family: 'Poppins', sans-serif;
   margin: 15px;
 }
 
-.conteneur3>.box3-e>p {
+.conteneur3>.content >.box3-e>p {
   font-family: 'Roboto', sans-serif;
   margin-left: 15px;
   margin-right: 15px;
 }
 
-.conteneur3>.box4-e {
+.conteneur3>.content >.box4-e {
   background-color: black;
   color: white;
   box-shadow: inset 5px 5px 10px white, inset -5px -5px 10px white;
@@ -252,7 +318,7 @@ body {
   text-align: center;
 }
 
-.conteneur3>.box4-e>h2 {
+.conteneur3>.content >.box4-e>h2 {
   font-family: 'Poppins', sans-serif;
   margin-bottom: 15px;
   margin-left: 15px;
@@ -260,7 +326,7 @@ body {
   margin-top: 15px;
 }
 
-.conteneur3>.box4-e>p {
+.conteneur3>.content >.box4-e>p {
   margin-left: 15px;
   margin-right: 15px;
   font-family: 'Roboto', sans-serif;
@@ -277,18 +343,24 @@ body {
 
 }
 
-.conteneur4>h1 {
+.conteneur4>h2 {
   text-align: center;
   text-decoration: underline;
+  font-family: 'Poppins', sans-serif;
 }
 
 .conteneur4>.competence {
   margin-top: 60px;
   text-align: center;
   font-size: 2rem;
+  /* display: flex;
+  overflow-x: scroll; */
   padding-bottom: 60px;
 }
-
+.conteneur4>.competence p{
+   text-align: center;
+   font-family: 'Poppins', sans-serif;
+}
 
 .réalisation {
   background-color: black;
@@ -297,9 +369,11 @@ body {
 
 }
 
-.réalisation>h1 {
+.réalisation>h2 {
   text-align: center;
   margin-bottom: 20px;
+  text-decoration: underline green;
+  font-family: 'Poppins', sans-serif;
 }
 
 .content1 {
@@ -356,6 +430,7 @@ text-decoration: none;
   align-items: center;
 }
 .content-modal{
+  overflow-y: scroll;
   background-color: rgb(0, 0, 0);
   color: white;
 margin: 0 30px 0 30px;
@@ -385,32 +460,45 @@ width: 80%;
 }
 
 form{
+  background-color: rgba(255, 255, 255, 0.671);
+   height: 100vh;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
   display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  position: fixed;
 }
 .content-form{
   background-color: black;
   color: white;
-  box-shadow: inset 2px 2px 5px white, inset -2px -2px 5px white;
+  box-shadow: inset 5px 5px 10px white, inset -5px -5px 10px white;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: center; 
+  border-radius: 5px;
   margin: 0 5%;
-  padding: 15px 0;
- 
+  padding: 20px 0;
+  width: 100%;
 }
 .content-form h2{
   text-align: center;
   margin-bottom: 15px;
 }
-.content-form input{
+.content-form>input{
   width: 80%;
-  height: 25px;
-  margin-bottom: 5px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  text-align: center;
 }
 .content-form textarea{
   width: 80%;
   height: 100px;
+  border-radius: 5px;
 }
 .content-form .btn-close{
   border: groove 5px red; 
@@ -418,15 +506,17 @@ form{
   font-weight: bold;
   text-decoration: none;
   padding: 5px ;
-  margin-top: 10px;
+  margin-top: 15px;
 }
-.content-form a{
-  border: solid 5px white; 
+.content-form button{
+  background-color: black;
+  border: solid 2px white;
   color: white;
   font-weight: bold;
   text-decoration: none;
-  padding: 5px ;
-  margin-top: 10px;
+  padding: 10px ;
+  margin-top: 15px;
+  
 }
 footer{
   border-top: solid 5px white;
@@ -451,23 +541,32 @@ footer>a{
     flex-direction: column;
     justify-content: center;
   }
-  .conteneur2>h1{
-    color: white;
-    justify-content: none;
-
+  .conteneur2>.box-presentation>.plusimage>.moi h2{
+    color: black;
+    font-size: 2.5rem;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 5px 15px;
   }
-  .conteneur2>.box-presentation {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2fr 3fr;
+  .box-presentation{
+    width: 90%;
+    margin: auto;
+  }
+  .conteneur2>.box-presentation>div{
+    margin-top: 30px;
+  }
+  .conteneur2 > .box-presentation > .plusimage{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+   .conteneur2>.box-presentation>ul{
+    padding-left: 2.5rem;
   
-  }
-  .conteneur2>.box-presentation>ul{
-    text-align: start;
   } 
   .conteneur2>.box-presentation>p{
     display: flex;
-   align-items: center;
+   justify-content: center;
+   padding: 0 2.5rem;
+   
   } 
   .conteneur2>.box-presentation>.moi{
     font-size: 2rem;
@@ -477,6 +576,12 @@ footer>a{
     flex-direction: column;
     justify-content: center;
   }
+  
+
+
+
+
+
   .conteneur3{
     height: 100vh;
   }
@@ -484,7 +589,7 @@ footer>a{
     grid-template-columns: 1fr 3fr;
    background-color: green;
   }
-  .conteneur3{
+  .conteneur3>.content{
     display: grid;
     grid-template-columns: 2fr 2fr;
 
@@ -534,18 +639,29 @@ footer>a{
   }
   .conteneur4>h1{
     margin-top: 20px;
-  }
+  } 
   
   .réalisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   text-align: center;
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
-  /* height: 100vh; */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: 0.2fr 0.2fr 0.2fr;
+   height: 100vh;
   }
+  .réalisation>.content1{
+    height: 220px;
+  }
+  /*
 .content1{
   padding: 50px 100px 0 100px;
   /* padding-top: 40px; */
 }
 
-  
-}
+  @media screen and (min-width:1080p){
+    
+    
+  }
