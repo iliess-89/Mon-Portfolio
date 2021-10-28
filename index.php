@@ -1,6 +1,7 @@
 <?php
 session_start();
 
+
 if (!empty($_POST)) {
 
     if (
@@ -133,10 +134,6 @@ if (!empty($_POST)) {
                     <img src="img1/wordpress.png" alt="" width="200px">
                     <p>wordpress</p>
                 </div>
-                <div class="left">
-                    <img src="img1/jquery.png" alt="" width="200px">
-                    <p>jquery</p>
-                </div>
             </div>
         </div>
     </div>
@@ -176,7 +173,7 @@ if (!empty($_POST)) {
         </div>
     </div>
 
-    <div class="conteneur4">
+    <!-- <div class="conteneur4">
         <h2 id="competence">Compétences</h2>
         <div class="competence">
 
@@ -208,7 +205,7 @@ if (!empty($_POST)) {
                 <img src="img1/jquery.png" alt="" width="200px">
                 <p>jquery</p>
             </div>
-        </div>
+        </div> -->
 
         <div class="réalisation">
             <h2 id="realisation">réalisations</h2>
@@ -242,11 +239,11 @@ if (!empty($_POST)) {
             // echo '</pre>';
 
             foreach ($projects as $project) {
-                echo "
+                echo"
      <div class='content1'>
-      <h2>{$project['titre']}</h2>
+      
             <img src='img1/FIMARAD-appels-a-projets-770x347.png' alt=''>
-           
+            <h2>{$project['titre']}</h2>
             <a href='#' class='open-btn' data-titre=\"{$project['titre']}\" data-image='img1/{$project['image']}' data-descript='{$project['description']}'>en savoir plus</a>
         </div>
 
@@ -288,9 +285,12 @@ if (!empty($_POST)) {
 
 
 
-        <footer>&copy
-            <a href="#">github</a>
-            <a class="btn-open" href="#contact">Contacter moi</a>
+        <footer>
+            <div class="flc">
+                <a href="https://github.com/iliess-89">github</a>
+               <div>&copy</div> 
+                <a class="btn-open" href="#contact">Contacter moi</a>
+            </div>
         </footer>
 </body>
 
