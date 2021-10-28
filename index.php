@@ -88,6 +88,9 @@ if (!empty($_POST)) {
     <div class="conteneur2">
         <h2 id="prensentation">Présentation</h2>
 
+        <div class="prentation-carousel">
+
+     
         <div class="box-presentation">
             <div class="plusimage">
                 <img src="img1/identité-300x300.jpg" alt="">
@@ -106,6 +109,7 @@ if (!empty($_POST)) {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quae explicabo sequi, obcaecati, dolorum cumque pariatur fuga architecto voluptatem suscipit odit perspiciatis. Sint veritatis similique quae quia quibusdam odio magni. </p>
             <div> <a href="#">contacter moi</a></div>
         </div>
+
         <div class="carousel">
             <h2>Compétences</h2>
             <div class="carousel-content">
@@ -135,6 +139,7 @@ if (!empty($_POST)) {
                     <p>wordpress</p>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 
